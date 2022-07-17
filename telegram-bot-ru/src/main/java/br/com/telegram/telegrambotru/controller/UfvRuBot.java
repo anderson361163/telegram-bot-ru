@@ -7,7 +7,6 @@ import org.telegram.telegrambots.meta.exceptions.TelegramApiException;
 
 public class UfvRuBot extends TelegramLongPollingBot {
 
-	@Override
 	public void onUpdateReceived(Update update) {
 		
 		/* Dados do bot (import/java.util.Date e /java.text.SimpleDateFormat
@@ -27,10 +26,6 @@ public class UfvRuBot extends TelegramLongPollingBot {
 		
 	}
 
-	@Override
-	public String getBotUsername() {
-		return null;
-	}
 
 	@Override
 	public String getBotToken() {
@@ -74,6 +69,12 @@ public class UfvRuBot extends TelegramLongPollingBot {
 		} catch (TelegramApiException e) {
 			e.printStackTrace();
 		}
+	}
+
+
+	public String getBotUsername() {
+		// TODO Auto-generated method stub
+		return null;
 	}
 	
 }
